@@ -1,13 +1,16 @@
-#Qml calendaring support samples
+# Qml calendaring support samples
+
+This sample show how qml calendaring system workd
+https://codereview.qt-project.org/#/c/188184
 
 ## Creating calendar object
-```
+```js   
 Qt.calendar(string calendarName);
 
 //example:
 var calendar = Qt.calendar("persian");
 ```
-```
+```js
 Qt.persianCalendar();
 Qt.islamicCalendar();
 Qt.gregoryCalendar();
@@ -17,7 +20,7 @@ var calendar = Qt.islamicCalendar();
 ```
 
 ##New function overloads
-```
+```js
 Date.ctor(calendar, year, month, day);
 
 Date.toLocaleString(locale);
@@ -41,15 +44,15 @@ Date.toLocaleDateString(calendar, locale, formatString);
 Date.toLocaleDateString(calendar, locale, formatEnum);
 ```
 
-###Samples
-####Create date from persian calendar
-```
+### Samples
+#### Create date from persian calendar
+```js
 var calendar = Qt.persianCalendar();
 var date = new Date(calendar, 1395, 12, 1);
 ```
 
-####Show today's date in persian calendar
-```
+#### Show today's date in persian calendar
+```js
 var calendar = Qt.persianCalendar();
 var date = new Date(/* extra parameteres here */);
 var out1 = date.toLocalDateString(calendar);
