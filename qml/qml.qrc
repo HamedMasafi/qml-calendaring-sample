@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>CalendarView.qml</file>
+        <file>DateMethods.qml</file>
+        <file>DateConvert.qml</file>
+    </qresource>
+</RCC>
